@@ -2,9 +2,8 @@
 <html>
 <head>
 	<title>Test Page</title>
-	<script type="text/javascript" src='jquery.js'></script>
 	<script type="text/javascript" src='knockout.js'></script>
-	<script type="text/javascript" src='scrollTo.js'></script>
+	<script type="text/javascript" src='../knockout-scroll-to.js'></script>
 </head>
 <body >
     <h1 style="text-align: center">KnockoutScollTo Example</h1>
@@ -28,7 +27,7 @@
 			<input data-bind='value: newGift' />
 			<button data-bind='click: goto'>See gift</button>
 		</div>
-		<div style="height:150px;width: 300px; overflow-y:auto;" id = 'gift_list2'>
+		<div style="height:50px;width: 300px; overflow-y:auto;" id = 'gift_list2'>
 			<ul data-bind='foreach: gifts' >
 				<li data-bind='text: $data, attr:{id: $data}'></li>
 			</ul>
