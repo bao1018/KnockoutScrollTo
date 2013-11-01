@@ -6,8 +6,8 @@ A Auto Scrolling Plugin for KnockoutJS
 1. Pull down the code from https://github.com/bao1018/KnockoutScrollTo.git
 2. Include knockout and Knockout ScrollTo in your code
 <pre>
-<script type="text/javascript" src='knockout.js'></script>
-<script type="text/javascript" src='knockout-scroll-to.js'></script>
+&lt;script type="text/javascript" src='knockout.js'&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src='knockout-scroll-to.js'&gt;&lt;/script&gt;
 </pre>
 3. If you want to observe a array change, if will scroll the last element if you append a element to that array
 <pre>
