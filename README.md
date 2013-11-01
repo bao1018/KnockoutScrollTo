@@ -17,7 +17,9 @@ If you want to observe a variable change, the vairable should be the selector of
 <pre>
 ko.observable().extend({scrollTo: {containerSelector: 'container_selector'}})
 </pre>
-## Example
+
+##  Example
+
 See how to use it in example folder
 
 ## License
