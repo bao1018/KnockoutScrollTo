@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Page</title>
+	<script type="text/javascript" src='jquery.js'></script>
+	<script type="text/javascript" src='knockout.js'></script>
+	<script type="text/javascript" src='scrollTo.js'></script>
+</head>
+<body >
+    <h1 style="text-align: center">KnockoutScollTo Example</h1>
+	<div id='1'>
+	  <h2> Observe Array</h2>
+		<div>
+			<input data-bind='value: newGift' />
+			<button data-bind='click: add'>Add gift</button>
+		</div>
+
+		<div style="height:150px;width: 300px; overflow-y:auto;" id = 'gift_list1'>
+			<ul data-bind='foreach: gifts' >
+				<li data-bind='text: $data, attr:{id: $data}'></li>
+			</ul>
+		</div>
+	</div>
+	<hr/>
+	<div id='2'>
+	 <h2> Observe Specific Item</h2>
+		<div>
+			<input data-bind='value: newGift' />
+			<button data-bind='click: goto'>See gift</button>
+		</div>
+		<div style="height:150px;width: 300px; overflow-y:auto;" id = 'gift_list2'>
+			<ul data-bind='foreach: gifts' >
+				<li data-bind='text: $data, attr:{id: $data}'></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+	<script type="text/javascript" src='scrollTo_test.js'></script>
+</html>
